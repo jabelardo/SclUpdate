@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="SclUpdate\SclUpdate.cbp" active="1" />
+		<Project filename="MonitorGrafico\MonitorGrafico.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

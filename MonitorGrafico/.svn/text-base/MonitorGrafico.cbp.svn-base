@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MonitorGrafico" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc8" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin\Release\MonitorGrafico" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="/MD" />
+					<Add option="/EHc" />
+					<Add option="/EHs" />
+					<Add option="/O2" />
+					<Add option="/Ox" />
+					<Add option="/Ob1" />
+					<Add option="/DNDEBUG" />
+					<Add directory="C:\wxWidgets-2.8.10\lib\vc_dll\mswu" />
+					<Add directory="..\" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:\wxWidgets-2.8.10\lib\vc_dll\mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="/NODEFAULTLIB:libcmt.lib" />
+					<Add library="msvcrt.lib" />
+					<Add library="wxmsw28u.lib" />
+					<Add library="advapi32.lib" />
+					<Add directory="C:\wxWidgets-2.8.10\lib\vc_dll" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='mt.exe /nologo /manifest &quot;bin\Release\MonitorGrafico.exe.manifest&quot; /outputresource:&quot;bin\Release\MonitorGrafico.exe&quot;;1' />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="/DWIN32" />
+			<Add option="/D__WIN32__" />
+			<Add option="/D__WXMSW__" />
+			<Add option="/DWXUSINGDLL" />
+			<Add option="/DwxUSE_UNICODE" />
+			<Add option="/D_WINDOWS" />
+			<Add option="/TP" />
+			<Add option="/Gd" />
+			<Add option="/GF" />
+			<Add option="/EHsc" />
+			<Add option="/D_CRT_SECURE_DEPRECATE" />
+			<Add option="/D_CRT_NONSTDC_NO_DEPRECATE" />
+			<Add option="/Zc:wchar_t" />
+			<Add option="/D_VC80_UPGRADE=0x0600" />
+			<Add option="/W3" />
+			<Add directory="C:\wxWidgets-2.8.10\include" />
+			<Add directory="C:\wxWidgets-2.8.10\contrib\include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="C:\wxWidgets-2.8.10\include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="/INCREMENTAL:NO" />
+			<Add option="/SUBSYSTEM:WINDOWS" />
+			<Add library="winmm.lib" />
+			<Add library="rpcrt4.lib" />
+		</Linker>
+		<Unit filename="App.cpp" />
+		<Unit filename="App.h" />
+		<Unit filename="Configuration.cpp" />
+		<Unit filename="Configuration.h" />
+		<Unit filename="GetPot" />
+		<Unit filename="MainDialog.cpp" />
+		<Unit filename="MainDialog.h" />
+		<Unit filename="MonitorGrafico.conf" />
+		<Unit filename="MonitorProtocol.cpp" />
+		<Unit filename="MonitorProtocol.h" />
+		<Unit filename="Server.cpp" />
+		<Unit filename="Server.h" />
+		<Unit filename="ServiceControlManager.cpp" />
+		<Unit filename="ServiceControlManager.h" />
+		<Unit filename="TaskBarIcon.cpp" />
+		<Unit filename="TaskBarIcon.h" />
+		<Unit filename="UpdateStats.cpp" />
+		<Unit filename="UpdateStats.h" />
+		<Unit filename="crc16.cpp" />
+		<Unit filename="crc16.h" />
+		<Unit filename="download.xpm" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxsmith\MainDialog.wxs" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="App.cpp" main="MainDialog" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/MainDialog.wxs" src="MainDialog.cpp" hdr="MainDialog.h" name="MainDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 52
+MonitorGrafico.depend
+MonitorGrafico.layout
+bin
+obj
+
+END

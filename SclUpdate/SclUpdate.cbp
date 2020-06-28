@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SclUpdate" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc8" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\SclUpdate" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="msvc8" />
+				<Option parameters="-h" />
+				<Compiler>
+					<Add option="/MDd" />
+					<Add option="/EHc" />
+					<Add option="/EHs" />
+					<Add option="/GR" />
+					<Add option="/Zi /D_DEBUG" />
+					<Add option="/Zi" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/D_CONSOLE" />
+					<Add option="/D_CRT_NONSTDC_NO_WARNINGS" />
+					<Add option="/D_CRT_SECURE_NO_WARNINGS" />
+					<Add directory="$(#ace)" />
+					<Add directory="..\" />
+				</Compiler>
+				<Linker>
+					<Add option="/DEBUG" />
+					<Add library="ACEd" />
+					<Add library="advapi32.lib" />
+					<Add library="user32.lib" />
+					<Add directory="$(#ace.lib)" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\SclUpdate" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="msvc8" />
+				<Compiler>
+					<Add option="/MD" />
+					<Add option="/Ox" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/D_CONSOLE" />
+					<Add option="/D_CRT_NONSTDC_NO_WARNINGS" />
+					<Add option="/D_CRT_SECURE_NO_WARNINGS" />
+					<Add directory="$(#ace)" />
+					<Add directory="..\" />
+				</Compiler>
+				<Linker>
+					<Add library="msvcrt.lib" />
+					<Add library="msvcprt.lib" />
+					<Add library="ACE.lib" />
+					<Add library="advapi32.lib" />
+					<Add directory="$(#ace.lib)" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="/W3" />
+			<Add option="/EHsc" />
+		</Compiler>
+		<Unit filename="GetPot" />
+		<Unit filename="SclUpdate.conf" />
+		<Unit filename="app.cpp" />
+		<Unit filename="app.h" />
+		<Unit filename="configuration.cpp" />
+		<Unit filename="configuration.h" />
+		<Unit filename="crc16.cpp" />
+		<Unit filename="crc16.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="monitor_acceptor.cpp" />
+		<Unit filename="monitor_acceptor.h" />
+		<Unit filename="monitor_protocol.cpp" />
+		<Unit filename="monitor_protocol.h" />
+		<Unit filename="monitor_service.cpp" />
+		<Unit filename="monitor_service.h" />
+		<Unit filename="nt_service.cpp" />
+		<Unit filename="nt_service.h" />
+		<Unit filename="update_manager.cpp" />
+		<Unit filename="update_manager.h" />
+		<Unit filename="update_service.cpp" />
+		<Unit filename="update_service.h" />
+		<Unit filename="update_stats.cpp" />
+		<Unit filename="update_stats.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
